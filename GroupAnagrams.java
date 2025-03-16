@@ -24,6 +24,7 @@ public class GroupAnagrams {
             char[] ch = str.toCharArray();
             Arrays.sort(ch);
             String key = String.valueOf(ch);
+            
             if(!keyVal.containsKey(key))
             {
                 keyVal.put(key, new ArrayList<String>());
