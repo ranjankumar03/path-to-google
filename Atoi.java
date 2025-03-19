@@ -20,6 +20,7 @@ public class Atoi {
 
         long num = 0;
         for(char ch : s.toCharArray()){
+            
             if(!Character.isDigit(ch)) break;
             num = num*10 + (ch - '0');
 
