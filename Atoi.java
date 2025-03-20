@@ -22,6 +22,7 @@ public class Atoi {
         for(char ch : s.toCharArray()){
             
             if(!Character.isDigit(ch)) break;
+            
             num = num*10 + (ch - '0');
 
             if(flag*num >= Integer.MAX_VALUE)  return Integer.MAX_VALUE;
