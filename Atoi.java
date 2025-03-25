@@ -9,7 +9,6 @@ public class Atoi {
     private static int myAtoi(String s) {
 
         s = s.strip();
-        
         if(s.isEmpty()) return 0;
 
         int flag = s.charAt(0) == '-' ? -1 : 1;
