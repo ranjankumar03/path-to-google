@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Result {
-    public static String getEarliestAvailableTimes(List<String> events, int k) {
+    public static String getEarliestAvailableTime(List<String> events, int k) {
         boolean[] busy = new boolean[1440]; // 1440 minutes in a day (0 to 1439)
 
         // Parse events and mark busy times
@@ -15,7 +15,6 @@ class Result {
                 busy[i] = true;
             }
         }
-
         // Find the first k-minute free slot
         int freeMinutes = 0;
         for (int i = 0; i < 1440; i++) {
