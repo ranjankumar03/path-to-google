@@ -2,6 +2,7 @@ import java.util.*;
 
 class Result {
     public static String getEarliestAvailableTime(List<String> events, int k) {
+        
         boolean[] busy = new boolean[1440]; // 1440 minutes in a day (0 to 1439)
 
         // Parse events and mark busy times
