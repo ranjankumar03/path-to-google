@@ -50,6 +50,7 @@ class Result {
             "sam sleep 12:00 18:59",
             "alex gaming 00:00 11:00"
         );
+        
         int k = 60;
 
         System.out.println(getEarliestAvailableTime(events, k)); // Expected Output: "19:00"
