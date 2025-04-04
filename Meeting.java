@@ -52,7 +52,6 @@ class Result {
         );
         
         int k = 60;
-
         System.out.println(getEarliestAvailableTime(events, k)); // Expected Output: "19:00"
     }
 }
