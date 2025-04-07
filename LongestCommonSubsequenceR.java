@@ -15,7 +15,8 @@ public class LongestCommonSubsequenceR {
         }
         if (str1.charAt(m - 1) == str2.charAt(n - 1)) {
             return 1 + lcs(str1, str2, m - 1, n - 1);
-        } else 
+        } 
+        else 
         {
             return Math.max(lcs(str1, str2, m - 1, n), lcs(str1, str2, m, n - 1));
         }
