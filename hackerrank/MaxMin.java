@@ -13,13 +13,13 @@ public class MaxMin{
         System.out.println(maxmin(2, arr));
     }
 
-    private static int maxmin(int k, List<Integer> arr){
+    private static int maxmin(int k, List<Integer> arr) {
 
         Collections.sort(arr);
 
         int min = Integer.MAX_VALUE;
 
-        for(int i=0; i<(arr.size() - k + 1 ); i++){
+        for(int i=0; i<(arr.size() - k + 1 ); i++) {
             min = Math.min(min, arr.get(i + k -1) - arr.get(i));
         }
         return min;
