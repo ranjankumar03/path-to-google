@@ -23,6 +23,5 @@ public class MaxMin{
             min = Math.min(min, arr.get(i + k -1) - arr.get(i));
         }
         return min;
-
     }
 }
