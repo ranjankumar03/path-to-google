@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class MaxMin{
     public static void main(String[] args){
 
-        int[] input = {1,4,7,2};
+        int[] input = {1,5,4,2};
         List<Integer> arr = Arrays.stream(input).boxed().collect(Collectors.toList());
         System.out.println(maxmin(2, arr));
     }
