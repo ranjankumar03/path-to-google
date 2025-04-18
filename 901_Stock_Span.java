@@ -13,6 +13,7 @@ class StockSpanner {
     }
 
     private static int[] calculateSpanOptimized(int[] arr) {
+        
         int len = arr.length;
         int[] spanner = new int[len];
         Stack<Integer> stack = new Stack<>();
