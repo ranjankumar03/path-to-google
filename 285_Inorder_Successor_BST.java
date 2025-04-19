@@ -2,13 +2,13 @@ class Inorder_Successor_BST {
 
     public static void main(String[] args) {
         // Construct a BST
-        // 20
-        // / \
-        // 8 22
-        // / \
-        // 4 12
-        // / \
-        // 10 14
+        //         20
+        //        /  \
+        //       8    22
+        //      / \
+        //     4   12
+        //        /  \
+        //       10   14
 
         Node root = new Node(20);
         root.left = new Node(8);
@@ -23,23 +23,27 @@ class Inorder_Successor_BST {
 
         Node successor = findSuccessor(root, targetNode);
 
-        System.out.println(successor);
-        
+        if (successor != null) {
+            System.out.println("Inorder Successor of " + target + " is: " + successor.value);
+        } else {
+            System.out.println("Inorder Successor of " + target + " does not exist.");
+        }
     }
-        
+
     private static Node findSuccessor(Node root, Node target) {
-        
         Node succ = null;
 
-        while(root != null){
-
-            if(root.value > target.value){
-
+        while (root != null) {
+            if (root.value > target.value) {
+                succ = root; // Update successor
+                root = root.left; // Move to the left subtree
+            } else {
+                root = root.right; // Move to the right subtree
             }
         }
+
         return succ;
     }
-
 }
 
 class Node {
