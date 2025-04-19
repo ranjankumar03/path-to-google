@@ -1,5 +1,4 @@
 class Inorder_Successor_BST {
-
     public static void main(String[] args) {
         // Construct a BST
         //         20
