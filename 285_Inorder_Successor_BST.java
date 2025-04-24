@@ -24,7 +24,8 @@ class Inorder_Successor_BST {
 
         if (successor != null) {
             System.out.println("Inorder Successor of " + target + " is: " + successor.value);
-        } else {
+        } 
+        else {
             System.out.println("Inorder Successor of " + target + " does not exist.");
         }
     }
