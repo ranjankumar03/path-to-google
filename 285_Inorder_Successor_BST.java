@@ -33,7 +33,6 @@ class Inorder_Successor_BST {
     private static Node findSuccessor(Node root, Node target) {
         
         Node succ = null;
-
         while (root != null) {
             if (root.value > target.value) {
                 succ = root; // Update successor
